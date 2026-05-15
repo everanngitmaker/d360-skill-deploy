@@ -34,8 +34,6 @@ One git branch per environment. Scripts handle retrieve, PR creation, and deploy
 
 ## Scripts
 
-The pipeline scripts (`1-retrieve.sh`, `2-pr.sh`, `3-deploy.sh`) live in [d360-deploy-cli-pipeline](https://github.com/everanngitmaker/d360-deploy-cli-pipeline) — use that repo to set up or copy the pipeline into your project.
-
 | Script | Purpose |
 |--------|---------|
 | `1-retrieve.sh` | Retrieves metadata from an org and commits it to the feature branch |
