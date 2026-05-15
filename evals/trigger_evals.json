@@ -1,0 +1,22 @@
+[
+  {"query": "how do I deploy my Data Cloud changes to production?", "should_trigger": true},
+  {"query": "I want to promote my feature branch from dev to stage", "should_trigger": true},
+  {"query": "how do I set up a new Salesforce Data Cloud devops repo from scratch?", "should_trigger": true},
+  {"query": "run 3-deploy.sh against my uat org", "should_trigger": true},
+  {"query": "my deploy failed with an ExtDataTranFieldTemplate error", "should_trigger": true},
+  {"query": "how do I retrieve metadata from my d360devops2 dev org?", "should_trigger": true},
+  {"query": "what's the promotion order for my pipeline?", "should_trigger": true},
+  {"query": "I need to set up dev, uat, and prod environments for a new Data Cloud project", "should_trigger": true},
+  {"query": "create a PR from feature branch to my dev branch using 2-pr.sh", "should_trigger": true},
+  {"query": "after deploying, what do I do in Data Kits?", "should_trigger": true},
+  {"query": "configure pipeline.config with custom promotion order", "should_trigger": true},
+  {"query": "I'm getting a promotion order error when running the pipeline", "should_trigger": true},
+  {"query": "write me a Python script to sort a list", "should_trigger": false},
+  {"query": "how do I fix a merge conflict in git?", "should_trigger": false},
+  {"query": "create a React component for a login form", "should_trigger": false},
+  {"query": "how do I set up a GitHub Actions CI pipeline?", "should_trigger": false},
+  {"query": "explain how Salesforce flows work", "should_trigger": false},
+  {"query": "what's the best way to structure a REST API?", "should_trigger": false},
+  {"query": "help me debug this JavaScript error", "should_trigger": false},
+  {"query": "how do I deploy a Salesforce Apex class?", "should_trigger": false}
+]

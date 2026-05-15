@@ -1,0 +1,52 @@
+Split: 15 train, 5 test (holdout=0.3)
+
+============================================================
+Iteration 1/5
+Description: Guide for Salesforce Data Cloud metadata deployments using the d360 pipeline pattern. Use this skill whenever the user mentions: deploying Data Cloud metadata, setting up a new Data Cloud devops repo, retrieving metadata from a Salesforce org, promoting a feature through environments, creating PRs between environment branches, running pipeline scripts (1-retrieve.sh, 2-pr.sh, 3-deploy.sh), Data Kit deployments, troubleshooting a failed deploy, configuring pipeline.config, working with d360devops2 or any repo using this pipeline pattern, or questions about environment setup (dev/stage/uat/training/prod). Trigger even if the user doesn't mention d360devops2 by name — this pattern applies to any Salesforce Data Cloud deployment pipeline.
+============================================================
+Train: 18/45 correct, precision=100% recall=0% accuracy=40% (245.2s)
+  [FAIL] rate=0/3 expected=True: after deploying, what do I do in Data Kits?
+  [FAIL] rate=0/3 expected=True: create a PR from feature branch to my dev branch using 2-pr.
+  [FAIL] rate=0/3 expected=True: what's the promotion order for my pipeline?
+  [FAIL] rate=0/3 expected=True: I'm getting a promotion order error when running the pipelin
+  [FAIL] rate=0/3 expected=True: run 3-deploy.sh against my uat org
+  [FAIL] rate=0/3 expected=True: my deploy failed with an ExtDataTranFieldTemplate error
+  [FAIL] rate=0/3 expected=True: how do I deploy my Data Cloud changes to production?
+  [FAIL] rate=0/3 expected=True: I want to promote my feature branch from dev to stage
+  [FAIL] rate=0/3 expected=True: configure pipeline.config with custom promotion order
+  [PASS] rate=0/3 expected=False: create a React component for a login form
+  [PASS] rate=0/3 expected=False: explain how Salesforce flows work
+  [PASS] rate=0/3 expected=False: how do I fix a merge conflict in git?
+  [PASS] rate=0/3 expected=False: help me debug this JavaScript error
+  [PASS] rate=0/3 expected=False: how do I deploy a Salesforce Apex class?
+  [PASS] rate=0/3 expected=False: write me a Python script to sort a list
+Test : 6/15 correct, precision=100% recall=0% accuracy=40% (0.0s)
+  [FAIL] rate=0/3 expected=True: I need to set up dev, uat, and prod environments for a new D
+  [FAIL] rate=0/3 expected=True: how do I retrieve metadata from my d360devops2 dev org?
+  [FAIL] rate=0/3 expected=True: how do I set up a new Salesforce Data Cloud devops repo from
+  [PASS] rate=0/3 expected=False: how do I set up a GitHub Actions CI pipeline?
+  [PASS] rate=0/3 expected=False: what's the best way to structure a REST API?
+
+Improving description...
+Traceback (most recent call last):
+  File "/Users/ann.fang/opt/anaconda3/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/ann.fang/opt/anaconda3/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/ann.fang/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown/skills/skill-creator/scripts/run_loop.py", line 333, in <module>
+    main()
+  File "/Users/ann.fang/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown/skills/skill-creator/scripts/run_loop.py", line 298, in main
+    output = run_loop(
+  File "/Users/ann.fang/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown/skills/skill-creator/scripts/run_loop.py", line 203, in run_loop
+    new_description = improve_description(
+  File "/Users/ann.fang/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown/skills/skill-creator/scripts/improve_description.py", line 115, in improve_description
+    response = client.messages.create(
+  File "/Users/ann.fang/opt/anaconda3/lib/python3.9/site-packages/anthropic/_utils/_utils.py", line 268, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ann.fang/opt/anaconda3/lib/python3.9/site-packages/anthropic/resources/messages/messages.py", line 991, in create
+    return self._post(
+  File "/Users/ann.fang/opt/anaconda3/lib/python3.9/site-packages/anthropic/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/ann.fang/opt/anaconda3/lib/python3.9/site-packages/anthropic/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'Invalid bearer token'}, 'request_id': 'req_011CaYeMbqzkGKSH3j1XvH7c'}

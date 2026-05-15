@@ -1,0 +1,23 @@
+{
+  "skill_name": "d360-deploy",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I built a new room reservation DMO in mysdo-dev and exported the manifest. What do I do now?",
+      "expected_output": "Step-by-step guide starting from creating a feature branch off prod, placing the manifest in manifests/, running 1-retrieve.sh, then 2-pr.sh to stage, deploying to mysdo-stage, manual Data Kit deploy, then promoting to prod the same way.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "I ran 2-pr.sh and got an error saying my feature branch hasn't been merged to stage yet, but I want to go straight to prod.",
+      "expected_output": "Explain that the promotion order (dev → stage → prod) is enforced by pipeline.config, why it exists (validate in stage first), and the correct next step: run 2-pr.sh to stage first, then promote to prod after validation.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Deploy to mysdo-stage failed. How do I troubleshoot it?",
+      "expected_output": "Cover checking org authentication (sf org list), using --dry-run to isolate the issue, reviewing component errors in deploy output, and common causes like manifest issues or missing files.",
+      "files": []
+    }
+  ]
+}
