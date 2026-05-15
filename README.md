@@ -60,8 +60,9 @@ Clone or copy from `d360-deploy-cli-pipeline` to get started.
 
 ## Installation
 
-This skill is part of the [my-skills](https://github.com/everanngitmaker) plugin collection. Copy the skill directory into your Claude Code skills folder:
+Register this repo as a Claude Code plugin marketplace, then install the skill:
 
 ```bash
-cp -r d360-deploy ~/.claude/plugins/marketplaces/my-skills/plugins/my-skills/skills/
+claude plugin marketplace add https://github.com/everanngitmaker/d360-skill-deploy.git
+claude plugin install d360-deploy
 ```
