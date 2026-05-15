@@ -50,6 +50,16 @@ The pipeline scripts (`1-retrieve.sh`, `2-pr.sh`, `3-deploy.sh`) live in [d360-d
 | `KQ_` fields cause deploy errors | Deleted before deploy, removed from manifests |
 | Orphaned manifest members | Detected and removed automatically |
 
+## Dependencies
+
+This skill requires a pipeline repo based on [d360-deploy-cli-pipeline](https://github.com/everanngitmaker/d360-deploy-cli-pipeline). Your project repo must have:
+
+- `config/pipeline.config` — defines `PROMOTION_ORDER` and `ORG_BRANCH_MAP`
+- `scripts/` — contains `1-retrieve.sh`, `2-pr.sh`, `3-deploy.sh`
+- `manifests/` — contains your `package.xml` manifest(s)
+
+Clone or copy from `d360-deploy-cli-pipeline` to get started.
+
 ## Installation
 
 This skill is part of the [my-skills](https://github.com/everanngitmaker) plugin collection. Copy the skill directory into your Claude Code skills folder:
